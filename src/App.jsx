@@ -1,5 +1,5 @@
 import Login from "./components/Login";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import SignUp from "./components/SignUp";
 import Home from "./pages/Home";
 import ChangePassword from "./components/ChangePassword";
@@ -7,7 +7,7 @@ import ChangePassword from "./components/ChangePassword";
 const App = () => {
   return (
     <div>
-      <Router basename="/oba_auth">
+      <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<SignUp />} />
