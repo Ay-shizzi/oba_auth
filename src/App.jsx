@@ -7,7 +7,7 @@ import ChangePassword from "./components/ChangePassword";
 const App = () => {
   return (
     <div>
-      <Router>
+      <Router basename="/oba_auth">
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<SignUp />} />
